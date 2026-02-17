@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Pages\AddUserForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Pages\CreateBarnForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Pages\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Pages\InventoryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Pages\ProductionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Pages\PurchasePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

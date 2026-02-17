@@ -1,0 +1,11 @@
+[2026-02-16 17:25:39] INFO - User 'admin' logged in successfully.
+[2026-02-16 17:26:44] INFO - User 'admin' logged in successfully.
+[2026-02-16 17:27:33] INFO - User 'admin' logged in successfully.
+[2026-02-16 17:29:13] ERROR - An error occurred during login. | Exception: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+[2026-02-16 17:29:14] INFO - User 'admin' logged in successfully.
+[2026-02-16 17:50:06] INFO - User 'admin' logged in successfully.
+[2026-02-16 18:14:54] INFO - User 'admin' logged in successfully.
+[2026-02-16 18:19:26] INFO - User 'admin' logged in successfully.
+[2026-02-16 18:23:35] INFO - User 'admin' logged in successfully.
+[2026-02-16 18:29:21] INFO - User 'admin' logged in successfully.
+[2026-02-16 18:29:51] INFO - User 'admin' logged in successfully.

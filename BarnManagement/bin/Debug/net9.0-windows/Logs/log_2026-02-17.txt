@@ -1,0 +1,278 @@
+[2026-02-17 08:33:43] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:08:22] WARNING - Failed login attempt for username: 'admin'
+[2026-02-17 09:08:26] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:08:42] INFO - New barn created: deneme for User: admin
+[2026-02-17 09:19:52] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:21:28] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:22:00] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:26:33] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:30:56] INFO - User 'admin' logged in successfully.
+[2026-02-17 09:36:00] INFO - User 'admin' logged in successfully.
+[2026-02-17 10:18:47] INFO - User 'admin' logged in successfully.
+[2026-02-17 10:35:12] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:10:53] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:14:35] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:15:11] INFO - User 'user' logged in successfully.
+[2026-02-17 11:25:22] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:27:09] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:33:08] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:33:28] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:34:43] INFO - User 'admin' logged in successfully.
+[2026-02-17 11:35:14] INFO - User 'deneme' logged in successfully.
+[2026-02-17 11:35:41] INFO - New barn created: Deneme2 for User: deneme
+[2026-02-17 12:06:53] INFO - User 'deneme' logged in successfully.
+[2026-02-17 12:12:46] INFO - User 'deneme' logged in successfully.
+[2026-02-17 12:20:36] INFO - User 'deneme' logged in successfully.
+[2026-02-17 12:21:40] INFO - User 'user' logged in successfully.
+[2026-02-17 12:22:00] INFO - New barn created: deneme for User: user
+[2026-02-17 13:45:55] INFO - User 'user' logged in successfully.
+[2026-02-17 13:46:04] INFO - User 'admin' logged in successfully.
+[2026-02-17 13:46:22] INFO - User 'son' logged in successfully.
+[2026-02-17 13:46:35] INFO - New barn created
+[2026-02-17 13:46:45] WARNING - Failed login attempt for username: 'admin'
+[2026-02-17 13:46:46] INFO - User 'admin' logged in successfully.
+[2026-02-17 13:57:08] INFO - User 'user' logged in successfully.
+[2026-02-17 13:58:07] INFO - User 'user' logged in successfully.
+[2026-02-17 13:59:04] INFO - User 'user' logged in successfully.
+[2026-02-17 14:02:43] INFO - User 'user' logged in successfully.
+[2026-02-17 14:31:51] INFO - User 'user' logged in successfully.
+[2026-02-17 14:32:20] INFO - User 'user' logged in successfully.
+[2026-02-17 14:40:30] INFO - User 'user' logged in successfully.
+[2026-02-17 14:48:21] INFO - User 'user' logged in successfully.
+[2026-02-17 15:08:12] INFO - User 'user' logged in successfully.
+[2026-02-17 15:17:49] INFO - User 'user' logged in successfully.
+[2026-02-17 16:22:12] INFO - User 'user' logged in successfully.
+[2026-02-17 16:26:16] INFO - User 'user' logged in successfully.
+[2026-02-17 16:34:27] INFO - User 'user' logged in successfully.
+[2026-02-17 16:36:00] INFO - User 'user' logged in successfully.
+[2026-02-17 16:47:26] INFO - User 'deneme' logged in successfully.
+[2026-02-17 16:54:07] INFO - User 'user' logged in successfully.
+[2026-02-17 17:11:49] INFO - User 'user' logged in successfully.
+[2026-02-17 17:16:16] INFO - User 'user' logged in successfully.
+[2026-02-17 17:19:59] INFO - User 'user' logged in successfully.
+[2026-02-17 17:20:35] INFO - User 'deneme' logged in successfully.
+[2026-02-17 17:35:52] INFO - User 'user' logged in successfully.
+[2026-02-17 17:36:22] INFO - AgingService: 2 animals became producible. BarnId=3
+[2026-02-17 17:36:32] INFO - AgingService: 1 animals became producible. BarnId=3
+[2026-02-17 17:36:52] INFO - AgingService: 6 animals became producible. BarnId=3
+[2026-02-17 17:43:00] INFO - User 'admin' logged in successfully.
+[2026-02-17 17:48:13] ERROR - An error occurred during login. | Exception: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+[2026-02-17 17:48:13] WARNING - Failed login attempt for username: 'user'
+[2026-02-17 17:48:19] INFO - User 'user' logged in successfully.
+[2026-02-17 17:48:29] INFO - Production cycle accumulated. BarnId=3
+[2026-02-17 17:48:37] INFO - Collect completed. BarnId=3
+[2026-02-17 17:48:37] INFO - Collect completed. BarnId=3
+[2026-02-17 17:48:39] INFO - Production cycle accumulated. BarnId=3
+[2026-02-17 17:48:49] INFO - Production cycle accumulated. BarnId=3
+[2026-02-17 17:50:55] INFO - User 'deneme' logged in successfully.
+[2026-02-17 17:51:05] INFO - No producible animals found. BarnId=2
+[2026-02-17 17:51:20] INFO - User 'admin' logged in successfully.
+[2026-02-17 17:51:31] INFO - No producible animals found. BarnId=1
+[2026-02-17 17:51:41] INFO - No producible animals found. BarnId=1
+[2026-02-17 17:51:50] INFO - User 'test' logged in successfully.
+[2026-02-17 17:51:59] INFO - New barn created
+[2026-02-17 17:52:10] INFO - No producible animals found. BarnId=5
+[2026-02-17 17:52:20] INFO - No producible animals found. BarnId=5
+[2026-02-17 17:52:30] INFO - No producible animals found. BarnId=5
+[2026-02-17 17:52:40] INFO - AgingService: 2 animals became producible. BarnId=5
+[2026-02-17 17:52:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:52:50] INFO - AgingService: 1 animals became producible. BarnId=5
+[2026-02-17 17:52:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:53:00] INFO - AgingService: 1 animals became producible. BarnId=5
+[2026-02-17 17:53:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:53:10] INFO - AgingService: 1 animals became producible. BarnId=5
+[2026-02-17 17:53:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:53:11] INFO - Collect completed. BarnId=5
+[2026-02-17 17:53:11] INFO - Collect completed. BarnId=5
+[2026-02-17 17:53:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:53:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:53:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:53:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:54:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:54:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:54:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:54:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:54:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:54:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:55:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:55:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:55:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:55:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:55:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:55:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:56:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:56:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:56:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:56:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:56:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:56:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:57:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:57:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:57:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:57:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:57:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:57:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:58:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:58:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:58:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:58:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:58:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:58:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:59:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:59:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:59:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:59:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:59:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 17:59:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:00:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:00:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:00:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:00:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:00:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:00:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:01:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:01:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:01:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:01:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:01:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:01:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:02:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:02:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:02:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:02:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:02:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:02:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:03:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:03:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:03:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:03:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:03:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:03:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:04:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:04:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:04:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:04:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:04:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:04:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:05:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:05:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:05:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:05:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:05:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:05:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:06:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:06:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:06:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:06:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:06:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:06:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:07:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:07:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:07:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:07:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:07:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:07:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:08:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:08:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:08:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:08:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:08:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:08:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:09:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:09:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:09:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:09:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:09:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:09:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:10:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:10:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:10:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:10:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:10:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:10:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:11:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:11:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:11:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:11:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:11:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:11:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:12:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:12:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:12:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:12:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:12:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:12:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:13:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:13:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:13:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:13:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:13:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:13:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:14:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:14:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:14:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:14:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:14:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:14:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:15:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:15:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:15:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:15:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:15:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:15:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:16:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:16:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:16:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:16:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:16:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:16:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:17:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:17:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:17:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:17:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:17:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:17:41] INFO - Collect completed. BarnId=5
+[2026-02-17 18:17:41] INFO - Collect completed. BarnId=5
+[2026-02-17 18:17:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:18:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:18:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:18:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:18:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:18:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:18:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:19:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:19:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:19:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:19:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:19:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:19:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:20:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:20:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:20:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:20:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:20:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:20:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:21:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:21:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:21:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:21:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:21:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:21:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:22:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:22:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:22:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:22:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:22:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:22:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:23:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:23:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:23:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:23:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:23:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:23:50] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:24:00] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:24:10] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:24:20] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:24:30] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:24:40] INFO - Production cycle accumulated. BarnId=5
+[2026-02-17 18:24:50] INFO - Production cycle accumulated. BarnId=5
