@@ -6,6 +6,8 @@ using BarnManagement.Core.Logging;
 using BarnManagement.Data;
 using BarnManagement.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Encodings.Web;
+using System.Text.Json;
 
 namespace BarnManagement.Business.Services
 {
@@ -121,6 +123,43 @@ namespace BarnManagement.Business.Services
             {
                 _logger.LogError(Messages.Error.GeneralError, ex);
                 return false;
+            }
+        }
+
+        public async Task<string> ExportSalesJsonAsync(int barnId, DateTime? fromUtc = null, DateTime? toUtc = null)
+        {
+            try
+            {
+                var query = _context.Sales
+                    .AsNoTracking()
+                    .Where(s => s.BarnId == barnId)
+                    .Include(s => s.Product)
+                    .AsQueryable();
+
+                if (fromUtc.HasValue)
+                    query = query.Where(s => s.SaleDate >= fromUtc.Value);
+
+                if (toUtc.HasValue)
+                    query = query.Where(s => s.SaleDate <= toUtc.Value);
+
+                var sales = await query
+                    .OrderByDescending(s => s.SaleDate)
+                    .ToListAsync();
+
+                var dto = _mapper.Map<List<SaleExportDto>>(sales);
+
+                var options = new JsonSerializerOptions
+                {
+                    WriteIndented = true,
+                    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                };
+
+                return JsonSerializer.Serialize(dto, options);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(Messages.Error.GeneralError, ex);
+                return "[]";
             }
         }
     }

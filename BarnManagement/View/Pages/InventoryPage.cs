@@ -3,6 +3,7 @@ using BarnManagement.Business.Constants;
 using BarnManagement.Business.DTOs;
 using BarnManagement.Model;
 using Microsoft.Extensions.DependencyInjection;
+using System.Text;
 
 namespace BarnManagement.View.Pages
 {
@@ -144,11 +145,11 @@ namespace BarnManagement.View.Pages
 
             if (qty <= 0 || qty > _selectedStock)
             {
-                MessageBox.Show("Invalid quantity.", Messages.Titles.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(Messages.Warning.InvalidQuantity, Messages.Titles.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            buttonSell.Enabled = false;
+            //buttonSell.Enabled = false;
 
             try
             {
@@ -165,7 +166,7 @@ namespace BarnManagement.View.Pages
 
                 if (!ok)
                 {
-                    MessageBox.Show("Not enough stock.", Messages.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Messages.Error.NotEnoughStock, Messages.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -175,7 +176,8 @@ namespace BarnManagement.View.Pages
             }
             catch (Exception ex)
             {
-                MessageBox.Show(Messages.Error.GeneralError + "\n" + ex.Message, Messages.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{Messages.Error.GeneralError}\n{ex.Message}", Messages.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             finally
             {
@@ -219,8 +221,8 @@ namespace BarnManagement.View.Pages
             if (_barnId <= 0 || _selectedProductId <= 0 || _currentUser == null)
                 return;
 
-            buttonSell.Enabled = false;
-            buttonSellAll.Enabled = false;
+            //buttonSell.Enabled = false;
+            //buttonSellAll.Enabled = false;
 
             try
             {
@@ -231,7 +233,7 @@ namespace BarnManagement.View.Pages
 
                 if (!ok)
                 {
-                    MessageBox.Show("No stock to sell.", Messages.Titles.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(Messages.Warning.NoStockToSell, Messages.Titles.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -247,6 +249,49 @@ namespace BarnManagement.View.Pages
             finally
             {
             }
+        }
+
+        private async void buttonExport_ClickAsync(object sender, EventArgs e)
+        {
+            if (_barnId <= 0 || _currentUser == null)
+                return;
+
+            buttonExport.Enabled = false;
+
+            try
+            {
+                using var scope = _serviceProvider.CreateScope();
+                var invService = scope.ServiceProvider.GetRequiredService<IInventoryService>();
+
+                string json = await invService.ExportSalesJsonAsync(_barnId);
+
+                using var sfd = new SaveFileDialog
+                {
+                    Title = "Export Sales History (JSON)",
+                    Filter = "JSON files (*.json)|*.json",
+                    DefaultExt = "json",
+                    AddExtension = true,
+                    FileName = $"sales_{_barnId}_{DateTime.UtcNow:yyyyMMdd_HHmmss}.json"
+                };
+
+                if (sfd.ShowDialog() != DialogResult.OK)
+                    return;
+
+                await File.WriteAllTextAsync(sfd.FileName, json, Encoding.UTF8);
+
+                MessageBox.Show(Messages.Info.SalesExportSuccess, Messages.Titles.Success, MessageBoxButtons.OK, MessageBoxIcon.Information );
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{Messages.Error.GeneralError}\n{ex.Message}", Messages.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error );
+
+            }
+            finally
+            {
+                buttonExport.Enabled = true;
+            }
+
         }
     }
 }

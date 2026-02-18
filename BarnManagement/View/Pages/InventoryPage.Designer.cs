@@ -36,6 +36,7 @@
             buttonSell = new Button();
             label1 = new Label();
             buttonSellAll = new Button();
+            buttonExport = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDownSellQuantity).BeginInit();
             SuspendLayout();
             // 
@@ -117,10 +118,22 @@
             buttonSellAll.UseVisualStyleBackColor = true;
             buttonSellAll.Click += buttonSellAll_Click;
             // 
+            // buttonExport
+            // 
+            buttonExport.Font = new Font("Segoe UI", 12F);
+            buttonExport.Location = new Point(318, 357);
+            buttonExport.Name = "buttonExport";
+            buttonExport.Size = new Size(71, 30);
+            buttonExport.TabIndex = 8;
+            buttonExport.Text = "Report";
+            buttonExport.UseVisualStyleBackColor = true;
+            buttonExport.Click += buttonExport_ClickAsync;
+            // 
             // InventoryPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(buttonExport);
             Controls.Add(buttonSellAll);
             Controls.Add(label1);
             Controls.Add(buttonSell);
@@ -146,5 +159,6 @@
         private Button buttonSell;
         private Label label1;
         private Button buttonSellAll;
+        private Button buttonExport;
     }
 }

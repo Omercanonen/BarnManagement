@@ -56,6 +56,10 @@ namespace BarnManagement.Business.Profiles
                 .ForMember(dest => dest.Quantity, opt => opt.MapFrom(src => src.TotalQuantity))
                 .ForMember(dest => dest.UpdatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow));
 
+            CreateMap<Sale, SaleExportDto>()
+                .ForMember(dest => dest.ProductName, opt => opt.MapFrom(src => src.Product.ProductName));
+
+
         }
     }
 }

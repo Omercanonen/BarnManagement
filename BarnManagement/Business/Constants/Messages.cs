@@ -14,7 +14,9 @@
                 public const string AnimalsDied = "{0} animals died";
                 public const string ProductionCycleAccumulated = "Production cycle accumulated";
                 public const string ProductionCollectCompleted = "Production collect completed";
-            }
+                public const string SalesExportSuccess = "Sales history exported successfully.";
+                public const string ExportSalesTitle = "Export Sales History (JSON)";
+        }
 
             public static class Error
             {
@@ -36,7 +38,8 @@
                 public const string ProductionProduceFailed = "Produce failed";
                 public const string ProductionGetAccumulatedFailed = "GetAccumulatedProducts failed";
                 public const string ProductionCollectFailed = "CollectManualProductsAsync failed";
-            }
+                public const string NotEnoughStock = "Not enough stock.";
+        }
     
 
             public static class Warning
@@ -49,7 +52,9 @@
                 public const string NoProducibleAnimals = "No producible animals found";
                 public const string NoActiveProductsForSpecies = "No active products found for producible species.";
                 public const string CollectCalledWithEmptyList = "Collect called with empty list";
-            }
+                public const string InvalidQuantity = "Invalid quantity";
+                public const string NoStockToSell = "No stock to sell";
+        }
 
             public static class Titles
             {

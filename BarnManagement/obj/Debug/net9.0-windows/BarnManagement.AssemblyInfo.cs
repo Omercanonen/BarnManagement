@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarnManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d94ae1ce2cfa0c310709e4492a90abd628d5f83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6012753fbd63dbf373fa7a86b2b8523558ee93a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarnManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarnManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
