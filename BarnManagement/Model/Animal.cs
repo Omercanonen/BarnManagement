@@ -20,7 +20,7 @@ namespace BarnManagement.Model
         public string AnimalName { get; set; } = null!;
         public string AnimalGender { get; set; } = null!;
         public DateTime BirthDate { get; set; }
-        public int AgeMonth { get; set; } = 0;       // Oyun ayı
+        public int AgeMonth { get; set; }
         public bool CanProduce { get; set; } = false;
         public bool IsActive { get; set; } = true;
 

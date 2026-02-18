@@ -34,6 +34,10 @@ namespace BarnManagement.Data
                 .HasForeignKey(bi => bi.BarnId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            builder.Entity<BarnInventory>()
+                .HasIndex(bi => new { bi.BarnId, bi.ProductId })
+                .IsUnique();
+
             builder.Entity<Barn>().Property(b => b.BarnBalance).HasColumnType("decimal(18,2)");
             builder.Entity<Sale>().Property(s => s.SaleAmount).HasColumnType("decimal(18,2)");
             builder.Entity<Sale>().Property(s => s.UnitPriceAtSale).HasColumnType("decimal(18,2)");

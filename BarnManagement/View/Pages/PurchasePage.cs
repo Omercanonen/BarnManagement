@@ -103,7 +103,6 @@ namespace BarnManagement.View.Pages
 
             try
             {
-                this.Cursor = Cursors.WaitCursor;
 
                 var selectedSpecies = (AnimalSpecies)comboBoxAnimalSpecies.SelectedItem;
 
@@ -115,6 +114,12 @@ namespace BarnManagement.View.Pages
                     var mapper = scope.ServiceProvider.GetRequiredService<IMapper>();
 
                     var dbBarn = await context.Barns.FindAsync(_currentBarn.BarnId);
+
+                    if (dbBarn.BarnCapacity >= dbBarn.BarnMaxCapacity)
+                    {
+                        MessageBox.Show(Messages.Error.CapacityExceeded, Messages.Titles.Error);
+                        return;
+                    }
 
                     if (dbBarn == null)
                     {
@@ -150,6 +155,7 @@ namespace BarnManagement.View.Pages
                     };
 
                     dbBarn.BarnBalance -= selectedSpecies.AnimalSpeciesPurchasePrice;
+                    dbBarn.BarnCapacity ++;
 
                     context.Animals.Add(animal);
                     context.Purchases.Add(purchaseLog);

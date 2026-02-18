@@ -1,4 +1,5 @@
 ﻿using BarnManagement.Business.Abstract;
+using BarnManagement.Business.Constants;
 using BarnManagement.Core.Logging;
 using BarnManagement.Data;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ namespace BarnManagement.Business.Services
             try
             {
                 var animals = await _context.Animals
+                    .Include(a => a.AnimalSpecies)
                     .Where(a => a.IsActive && a.BarnId == barnId)
                     .ToListAsync();
 
@@ -28,10 +30,21 @@ namespace BarnManagement.Business.Services
                     return;
 
                 int maturedCount = 0;
+                int deadCount = 0;
 
                 foreach (var animal in animals)
                 {
                     animal.AgeMonth += 1;
+
+                    int lifeSpan = animal.AnimalSpecies.AnimalSpeciesLifeSpan;
+
+                    if (lifeSpan > 0 && animal.AgeMonth >= lifeSpan)
+                    {
+                        animal.CanProduce = false;
+                        animal.IsActive = false;
+                        deadCount++;
+                        continue;
+                    }
 
                     if (!animal.CanProduce && animal.AgeMonth >= 6)
                     {
@@ -43,49 +56,15 @@ namespace BarnManagement.Business.Services
                 await _context.SaveChangesAsync();
 
                 if (maturedCount > 0)
-                    _logger.LogInfo($"AgingService: {maturedCount} animals became producible. BarnId={barnId}");
+                    _logger.LogInfo(string.Format(Messages.Info.AnimalsGrewUp, maturedCount));
+
+                if (deadCount > 0)
+                    _logger.LogInfo(string.Format(Messages.Info.AnimalsDied,deadCount));
             }
             catch (Exception ex)
             {
-                _logger.LogError($"AgingService failed. BarnId={barnId}", ex);
+                _logger.LogError(string.Format(Messages.Error.AgingServiceError, ex.Message), ex);
             }
         }
-
-        //public async Task ProcessAnimalGrowthAsync()
-        //{
-        //    var growingAnimals = await _context.Animals
-        //        .Where(a => a.IsActive && !a.CanProduce)
-        //        .ToListAsync();
-
-        //    if (!growingAnimals.Any())
-        //        return;
-
-        //    int grownCount = 0;
-
-        //    foreach (var animal in growingAnimals)
-        //    {
-        //        // Oyun zamanı:
-        //        // 1 dakika = 1 ay
-        //        double ageInGameMonths =
-        //            (DateTime.UtcNow - animal.BirthDate).TotalMinutes;
-
-        //        // Üretim eşiği: 6 ay = 6 dakika
-        //        if (ageInGameMonths >= 6)
-        //        {
-        //            animal.CanProduce = true;
-        //            grownCount++;
-        //        }
-        //    }
-
-        //    if (grownCount > 0)
-        //    {
-        //        await _context.SaveChangesAsync();
-
-        //        string logMessage =
-        //            $"AgingService: {grownCount} animals became producible (>=6 months).";
-
-        //        _logger.LogInfo(logMessage);
-        //    }
-        //}
     }
 }

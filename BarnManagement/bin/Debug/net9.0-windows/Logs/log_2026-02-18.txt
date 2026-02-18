@@ -1,0 +1,180 @@
+[2026-02-18 08:31:35] INFO - User 'user' logged in successfully.
+[2026-02-18 08:31:45] INFO - Production cycle accumulated. BarnId=3
+[2026-02-18 08:31:55] INFO - Production cycle accumulated. BarnId=3
+[2026-02-18 08:32:05] INFO - Production cycle accumulated. BarnId=3
+[2026-02-18 08:32:12] INFO - Collect completed. BarnId=3
+[2026-02-18 08:32:12] INFO - Collect completed. BarnId=3
+[2026-02-18 08:32:15] INFO - Production cycle accumulated. BarnId=3
+[2026-02-18 08:52:11] INFO - User 'admin' logged in successfully.
+[2026-02-18 08:52:21] WARNING - No producible animals found
+[2026-02-18 08:52:31] INFO - User 'asd' logged in successfully.
+[2026-02-18 08:52:40] INFO - New barn created
+[2026-02-18 08:52:51] WARNING - No producible animals found
+[2026-02-18 08:53:01] WARNING - No producible animals found
+[2026-02-18 08:56:27] INFO - User 'admin' logged in successfully.
+[2026-02-18 08:56:40] ERROR - An error occurred during login. | Exception: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+[2026-02-18 08:56:41] INFO - User 'rrr' logged in successfully.
+[2026-02-18 08:56:48] INFO - New barn created
+[2026-02-18 08:56:59] WARNING - No producible animals found
+[2026-02-18 08:57:09] WARNING - No producible animals found
+[2026-02-18 09:11:58] INFO - User 'user' logged in successfully.
+[2026-02-18 09:12:08] INFO - Production cycle accumulated
+[2026-02-18 09:12:18] INFO - Production cycle accumulated
+[2026-02-18 09:12:28] INFO - Production cycle accumulated
+[2026-02-18 09:12:38] INFO - Production cycle accumulated
+[2026-02-18 09:12:48] INFO - Production cycle accumulated
+[2026-02-18 09:12:58] INFO - Production cycle accumulated
+[2026-02-18 09:13:02] INFO - Collect called with empty list
+[2026-02-18 09:13:02] INFO - Collect called with empty list
+[2026-02-18 09:13:08] INFO - Production cycle accumulated
+[2026-02-18 09:13:18] INFO - Production cycle accumulated
+[2026-02-18 09:13:28] INFO - Production cycle accumulated
+[2026-02-18 09:13:38] INFO - Production cycle accumulated
+[2026-02-18 09:13:48] INFO - Production cycle accumulated
+[2026-02-18 09:13:58] INFO - Production cycle accumulated
+[2026-02-18 09:14:08] INFO - Production cycle accumulated
+[2026-02-18 09:14:18] INFO - Production cycle accumulated
+[2026-02-18 09:14:28] INFO - Production cycle accumulated
+[2026-02-18 09:14:38] INFO - Production cycle accumulated
+[2026-02-18 09:14:48] INFO - Production cycle accumulated
+[2026-02-18 09:14:58] INFO - Production cycle accumulated
+[2026-02-18 09:15:08] INFO - Production cycle accumulated
+[2026-02-18 09:15:18] INFO - Production cycle accumulated
+[2026-02-18 09:15:28] INFO - Production cycle accumulated
+[2026-02-18 09:15:38] INFO - Production cycle accumulated
+[2026-02-18 09:15:48] INFO - Production cycle accumulated
+[2026-02-18 09:15:58] INFO - Production cycle accumulated
+[2026-02-18 09:16:08] INFO - Production cycle accumulated
+[2026-02-18 09:16:18] INFO - Production cycle accumulated
+[2026-02-18 09:16:28] INFO - Production cycle accumulated
+[2026-02-18 09:16:38] INFO - Production cycle accumulated
+[2026-02-18 09:18:47] INFO - User 'user' logged in successfully.
+[2026-02-18 09:26:11] INFO - User 'user' logged in successfully.
+[2026-02-18 09:26:22] INFO - Production cycle accumulated
+[2026-02-18 09:26:32] INFO - Production cycle accumulated
+[2026-02-18 09:27:17] INFO - User 'user' logged in successfully.
+[2026-02-18 09:27:27] INFO - Production cycle accumulated
+[2026-02-18 09:27:35] INFO - Sell completed. BarnId=3, ProductId=3, Qty=5, Total=10.00
+[2026-02-18 09:27:35] INFO - Sell completed. BarnId=3, ProductId=3, Qty=5, Total=10.00
+[2026-02-18 09:27:37] INFO - Production cycle accumulated
+[2026-02-18 09:27:45] INFO - Collect called with empty list
+[2026-02-18 09:27:45] INFO - Collect called with empty list
+[2026-02-18 09:27:47] INFO - Production cycle accumulated
+[2026-02-18 09:27:58] INFO - User 'asd' logged in successfully.
+[2026-02-18 09:28:09] WARNING - No producible animals found
+[2026-02-18 09:28:19] INFO - {0} animals ready for production
+[2026-02-18 09:28:19] INFO - Production cycle accumulated
+[2026-02-18 09:28:29] INFO - Production cycle accumulated
+[2026-02-18 09:28:37] INFO - Collect called with empty list
+[2026-02-18 09:28:37] INFO - Collect called with empty list
+[2026-02-18 09:28:39] INFO - Production cycle accumulated
+[2026-02-18 09:28:49] INFO - Production cycle accumulated
+[2026-02-18 09:28:59] INFO - Production cycle accumulated
+[2026-02-18 09:29:09] INFO - Production cycle accumulated
+[2026-02-18 09:29:19] INFO - Production cycle accumulated
+[2026-02-18 09:29:29] INFO - Production cycle accumulated
+[2026-02-18 09:29:39] INFO - Production cycle accumulated
+[2026-02-18 09:29:49] INFO - Production cycle accumulated
+[2026-02-18 09:29:59] INFO - Production cycle accumulated
+[2026-02-18 09:30:09] INFO - Production cycle accumulated
+[2026-02-18 09:30:19] INFO - Production cycle accumulated
+[2026-02-18 09:30:29] INFO - Production cycle accumulated
+[2026-02-18 09:30:39] INFO - Production cycle accumulated
+[2026-02-18 09:30:49] INFO - Production cycle accumulated
+[2026-02-18 09:30:59] INFO - Production cycle accumulated
+[2026-02-18 09:31:09] INFO - Production cycle accumulated
+[2026-02-18 09:31:19] INFO - Production cycle accumulated
+[2026-02-18 09:31:29] INFO - Production cycle accumulated
+[2026-02-18 09:31:38] INFO - Sell completed. BarnId=6, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:31:38] INFO - Sell completed. BarnId=6, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:31:39] INFO - Production cycle accumulated
+[2026-02-18 09:32:45] INFO - User 'user' logged in successfully.
+[2026-02-18 09:32:56] INFO - Production cycle accumulated
+[2026-02-18 09:32:59] INFO - Sell completed. BarnId=3, ProductId=3, Qty=20, Total=40.00
+[2026-02-18 09:32:59] INFO - Sell completed. BarnId=3, ProductId=3, Qty=20, Total=40.00
+[2026-02-18 09:33:04] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:04] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:06] INFO - Production cycle accumulated
+[2026-02-18 09:33:08] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:08] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:12] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:12] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:16] INFO - Production cycle accumulated
+[2026-02-18 09:33:17] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:33:17] INFO - Sell completed. BarnId=3, ProductId=1, Qty=2, Total=30.00
+[2026-02-18 09:46:32] INFO - User 'admin' logged in successfully.
+[2026-02-18 09:46:42] WARNING - No producible animals found
+[2026-02-18 09:46:48] INFO - User 'qwe' logged in successfully.
+[2026-02-18 09:46:59] INFO - New barn created
+[2026-02-18 09:47:10] WARNING - No producible animals found
+[2026-02-18 09:47:20] WARNING - No producible animals found
+[2026-02-18 09:47:30] INFO - {0} animals ready for production
+[2026-02-18 09:47:30] INFO - Production cycle accumulated
+[2026-02-18 09:47:40] INFO - {0} animals ready for production
+[2026-02-18 09:47:40] INFO - Production cycle accumulated
+[2026-02-18 09:47:50] INFO - Production cycle accumulated
+[2026-02-18 09:47:51] INFO - Collect called with empty list
+[2026-02-18 09:47:51] ERROR - CollectManualProductsAsync failed | Exception: An error occurred while saving the entity changes. See the inner exception for details.
+[2026-02-18 09:48:00] INFO - Production cycle accumulated
+[2026-02-18 09:48:10] INFO - Production cycle accumulated
+[2026-02-18 09:48:14] INFO - Collect called with empty list
+[2026-02-18 09:48:14] INFO - Collect called with empty list
+[2026-02-18 09:48:20] INFO - Production cycle accumulated
+[2026-02-18 09:48:27] INFO - Collect called with empty list
+[2026-02-18 09:48:27] INFO - Collect called with empty list
+[2026-02-18 09:48:30] INFO - Production cycle accumulated
+[2026-02-18 09:48:36] INFO - Collect called with empty list
+[2026-02-18 09:48:36] INFO - Collect called with empty list
+[2026-02-18 09:55:06] INFO - User 'user' logged in successfully.
+[2026-02-18 09:55:10] INFO - Sell completed. BarnId=3, ProductId=3, Qty=92, Total=184.00
+[2026-02-18 09:55:16] INFO - Production cycle accumulated
+[2026-02-18 09:55:26] INFO - Production cycle accumulated
+[2026-02-18 10:06:40] INFO - User 'user' logged in successfully.
+[2026-02-18 10:06:51] INFO - Production cycle accumulated
+[2026-02-18 10:07:00] INFO - Production cycle accumulated
+[2026-02-18 10:14:54] INFO - User 'user' logged in successfully.
+[2026-02-18 10:15:04] INFO - Production cycle accumulated
+[2026-02-18 10:15:14] INFO - Production cycle accumulated
+[2026-02-18 10:15:24] INFO - Production cycle accumulated
+[2026-02-18 10:15:34] INFO - Production cycle accumulated
+[2026-02-18 10:15:44] INFO - Production cycle accumulated
+[2026-02-18 10:15:54] INFO - Production cycle accumulated
+[2026-02-18 10:16:04] INFO - Production cycle accumulated
+[2026-02-18 10:16:12] INFO - User 'test' logged in successfully.
+[2026-02-18 10:16:22] INFO - AgingService: 5 animals died (lifespan reached). BarnId=5
+[2026-02-18 10:16:22] WARNING - No producible animals found
+[2026-02-18 10:27:18] INFO - User 'test' logged in successfully.
+[2026-02-18 10:27:29] INFO - User 'user' logged in successfully.
+[2026-02-18 10:34:59] INFO - User 'test' logged in successfully.
+[2026-02-18 10:35:08] INFO - User 'user' logged in successfully.
+[2026-02-18 10:35:18] INFO - Production cycle accumulated
+[2026-02-18 10:35:28] INFO - Production cycle accumulated
+[2026-02-18 10:35:32] INFO - Collect called with empty list
+[2026-02-18 10:35:32] INFO - Collect called with empty list
+[2026-02-18 10:35:36] INFO - Operation completed successfully.
+[2026-02-18 10:35:36] INFO - Operation completed successfully.
+[2026-02-18 10:35:37] INFO - Operation completed successfully.
+[2026-02-18 10:35:37] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - 1 animals ready for production
+[2026-02-18 10:35:38] INFO - Production cycle accumulated
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:38] INFO - Operation completed successfully.
+[2026-02-18 10:35:39] INFO - Operation completed successfully.
+[2026-02-18 10:35:39] INFO - Operation completed successfully.
+[2026-02-18 10:35:48] INFO - Collect called with empty list
+[2026-02-18 10:35:48] INFO - Collect called with empty list
+[2026-02-18 10:35:48] INFO - Production cycle accumulated
+[2026-02-18 10:35:49] INFO - Operation completed successfully.
+[2026-02-18 10:35:53] INFO - Operation completed successfully.
+[2026-02-18 10:35:53] INFO - Operation completed successfully.
+[2026-02-18 10:49:26] INFO - User 'user' logged in successfully.
+[2026-02-18 10:49:33] INFO - Operation completed successfully.
+[2026-02-18 10:49:36] INFO - Production cycle accumulated

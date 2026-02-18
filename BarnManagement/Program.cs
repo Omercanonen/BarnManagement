@@ -50,6 +50,7 @@ namespace BarnManagement
 
                 services.AddScoped<IAgingService, AgingService>();
                 services.AddScoped<IProductionService, ProductionService>();
+                services.AddScoped<IInventoryService, InventoryService>();
 
                 services.AddTransient<Login>();
                 services.AddTransient<MainForm>();

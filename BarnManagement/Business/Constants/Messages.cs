@@ -10,8 +10,11 @@
                 public const string AnimalsPurchased = "Animals purchased";
                 public const string UserCreated = "User created successfully.";
                 public const string BarnCreatedLog = "New barn created";
-                public const string AnimalsGrewUp = "{0} animals grew up and are ready for production.";
-        }
+                public const string AnimalsGrewUp = "{0} animals ready for production";
+                public const string AnimalsDied = "{0} animals died";
+                public const string ProductionCycleAccumulated = "Production cycle accumulated";
+                public const string ProductionCollectCompleted = "Production collect completed";
+            }
 
             public static class Error
             {
@@ -27,16 +30,25 @@
                 public const string BarnCreationError = "Error creating barn.";
                 public const string PageLoadError = "Page could not be loaded: {0}";
                 public const string TimerError = "Aging Timer Error: {0}";
+                public const string AgingServiceError = "Aging Service Error: {0}";
                 public const string BarnNotFound = "Barn information could not be found.";
-        }
+                public const string ProductionGetPotentialFailed = "GetProductionPotential failed";
+                public const string ProductionProduceFailed = "Produce failed";
+                public const string ProductionGetAccumulatedFailed = "GetAccumulatedProducts failed";
+                public const string ProductionCollectFailed = "CollectManualProductsAsync failed";
+            }
+    
 
             public static class Warning
             {
-                public const string LowBalance = "Warning: Barn balance is running low.";
+                public const string LowBalance = "Warning: Barn balance is running low";
                 public const string AreYouSure = "Are you sure you want to proceed?";
-                public const string SelectSpecies = "Please select an animal species.";
-                public const string EnterAnimalName = "Please enter a name for the animal.";
-                public const string SelectGender = "Please select a gender.";
+                public const string SelectSpecies = "Please select an animal species";
+                public const string EnterAnimalName = "Please enter a name for the animal";
+                public const string SelectGender = "Please select a gender";
+                public const string NoProducibleAnimals = "No producible animals found";
+                public const string NoActiveProductsForSpecies = "No active products found for producible species.";
+                public const string CollectCalledWithEmptyList = "Collect called with empty list";
             }
 
             public static class Titles

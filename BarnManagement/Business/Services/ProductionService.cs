@@ -1,4 +1,6 @@
-﻿using BarnManagement.Business.Abstract;
+﻿using AutoMapper;
+using BarnManagement.Business.Abstract;
+using BarnManagement.Business.Constants;
 using BarnManagement.Business.DTOs;
 using BarnManagement.Core.Logging;
 using BarnManagement.Data;
@@ -13,6 +15,7 @@ namespace BarnManagement.Business.Services
 
         private readonly AppDbContext _context;
         private readonly ILoggerService _logger;
+        private readonly IMapper _mapper;
 
         private static readonly ConcurrentDictionary<int, Dictionary<int, AccumulatedProductDto>> _pending
             = new();
@@ -20,10 +23,11 @@ namespace BarnManagement.Business.Services
         private static readonly ConcurrentDictionary<int, object> _locks
             = new();
 
-        public ProductionService(AppDbContext context, ILoggerService logger)
+        public ProductionService(AppDbContext context, ILoggerService logger, IMapper mapper)
         {
             _context = context;
             _logger = logger;
+            _mapper = mapper;
         }
 
         private static object GetLock(int barnId)
@@ -92,7 +96,7 @@ namespace BarnManagement.Business.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError($"GetProductionPotentialAsync failed. BarnId={barnId}", ex);
+                _logger.LogError(string.Format(Messages.Error.ProductionGetPotentialFailed, barnId), ex);
                 return new List<AnimalProductionDto>();
             }
         }
@@ -114,7 +118,7 @@ namespace BarnManagement.Business.Services
 
                 if (!productionGroups.Any())
                 {
-                    _logger.LogInfo($"No producible animals found. BarnId={barnId}");
+                    _logger.LogWarning(string.Format(Messages.Warning.NoProducibleAnimals));
                     return;
                 }
 
@@ -127,7 +131,7 @@ namespace BarnManagement.Business.Services
 
                 if (!products.Any())
                 {
-                    _logger.LogWarning($"No active products found for producible species. BarnId={barnId}");
+                    _logger.LogWarning(string.Format(Messages.Warning.NoActiveProductsForSpecies));
                     return;
                 }
 
@@ -140,7 +144,7 @@ namespace BarnManagement.Business.Services
                         var product = products.FirstOrDefault(p => p.AnimalSpeciesId == group.SpeciesId);
                         if (product == null) continue;
 
-                        int producedQty = group.AnimalCount; // 1 dk'da hayvan sayısı kadar üret
+                        int producedQty = group.AnimalCount;
                         if (producedQty <= 0) continue;
 
                         if (!cart.TryGetValue(product.ProductId, out var item))
@@ -158,11 +162,13 @@ namespace BarnManagement.Business.Services
                     }
                 }
 
-                _logger.LogInfo($"Production cycle accumulated. BarnId={barnId}");
+                _logger.LogInfo(string.Format(Messages.Info.ProductionCycleAccumulated));
+
             }
             catch (Exception ex)
             {
-                _logger.LogError($"ProduceAsync failed. BarnId={barnId}", ex);
+                _logger.LogError(string.Format(Messages.Error.ProductionProduceFailed), ex);
+
             }
         }
 
@@ -175,21 +181,17 @@ namespace BarnManagement.Business.Services
                     if (!_pending.TryGetValue(barnId, out var cart))
                         return new List<AccumulatedProductDto>();
 
-                    return cart.Values
+                    var list = cart.Values
                         .Where(x => x.TotalQuantity > 0)
-                        .Select(x => new AccumulatedProductDto
-                        {
-                            ProductId = x.ProductId,
-                            ProductName = x.ProductName,
-                            TotalQuantity = x.TotalQuantity
-                        })
                         .OrderBy(x => x.ProductName)
                         .ToList();
+
+                    return _mapper.Map<List<AccumulatedProductDto>>(list);
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"GetAccumulatedProducts failed. BarnId={barnId}", ex);
+                _logger.LogError(string.Format(Messages.Error.ProductionGetAccumulatedFailed), ex);
                 return new List<AccumulatedProductDto>();
             }
         }
@@ -200,7 +202,7 @@ namespace BarnManagement.Business.Services
             {
                 if (collectedItems == null || collectedItems.Count == 0)
                 {
-                    _logger.LogWarning($"Collect called with empty list. BarnId={barnId}");
+                    _logger.LogWarning(string.Format(Messages.Warning.CollectCalledWithEmptyList));
                     return;
                 }
 
@@ -211,18 +213,14 @@ namespace BarnManagement.Business.Services
 
                     if (inventoryItem == null)
                     {
-                        inventoryItem = new BarnInventory
-                        {
-                            BarnId = barnId,
-                            ProductId = item.ProductId,
-                            Quantity = 0,
-                            UpdatedAt = DateTime.UtcNow
-                        };
+                        inventoryItem = _mapper.Map<BarnInventory>(item);
+                        inventoryItem.BarnId = barnId;
+
                         _context.BarnInventories.Add(inventoryItem);
                     }
-
-                    inventoryItem.Quantity += item.TotalQuantity;
-                    inventoryItem.UpdatedAt = DateTime.UtcNow;
+                    
+                   inventoryItem.Quantity += item.TotalQuantity;
+                   inventoryItem.UpdatedAt = DateTime.UtcNow;           
                 }
 
                 await _context.SaveChangesAsync();
@@ -236,11 +234,12 @@ namespace BarnManagement.Business.Services
                     }
                 }
 
-                _logger.LogInfo($"Collect completed. BarnId={barnId}");
+                _logger.LogInfo(Messages.Warning.CollectCalledWithEmptyList);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"CollectManualProductsAsync failed. BarnId={barnId}", ex);
+                _logger.LogError(string.Format(Messages.Error.ProductionCollectFailed), ex);
+
             }
         }
 

@@ -169,6 +169,10 @@ namespace BarnManagement.View
                     }
                     else if (page is InventoryPage inventoryPage)
                     {
+                        if (CurrentBarn != null)
+                            inventoryPage.SetBarn(CurrentBarn.BarnId);
+
+                        inventoryPage.SetUser(_currentUser!);
                     }
                     else if (page is ProductionPage productionPage)
                     {

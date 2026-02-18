@@ -25,7 +25,6 @@
 
         public void LogError(string message, Exception? ex = null)
         {
-            // Eğer exception varsa mesajın sonuna detayını ekle
             string finalMessage = ex != null
                 ? $"{message} | Exception: {ex.Message}"
                 : message;

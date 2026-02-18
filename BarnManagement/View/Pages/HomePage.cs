@@ -86,15 +86,22 @@ namespace BarnManagement.View.Pages
                         .AsEnumerable()
                         .Select(a =>
                         {
-                            var totalMonths = (int)(DateTime.UtcNow - a.BirthDate).TotalMinutes;
+                            int totalMonths = a.AgeMonth;
 
-                            if (totalMonths < 0) totalMonths = 0;
+                            if (totalMonths < 0)
+                                totalMonths = 0;
 
-                            var years = totalMonths / 12;
-                            var months = totalMonths % 12;
-                            string ageText = years > 0
-                                ? $"{years} Yıl {months} Ay"
-                                : $"{months} Ay";
+                            int years = totalMonths / 12;
+                            int months = totalMonths % 12;
+
+                            string ageText;
+
+                            if (years > 0 && months > 0)
+                                ageText = $"{years} Year {months} Month";
+                            else if (years > 0)
+                                ageText = $"{years} Year";
+                            else
+                                ageText = $"{months} Month";
 
                             return new
                             {
